@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS 1  //取消对scanf危险的定义
+#include <stdio.h>                 //引用头文件
+int main()                         //定义主函数
+{                                  //主函数内容  开始
+	int  line = 1;                   //定义变量line=1
+	while (line < 30000)             //循环语句   条件 若line<30000
+		{                              //循环语句   循环体开始
+		printf("写代码，%d\n", line);   //打印   写代码  行号
+	    line++;                      //给line重新赋值+1
+		}                              //循环语句   循环体结束
+	if (line == 30000)               //条件语句   如果line=30000
+		printf("好offer\n");           //打印   好offer   换行
+	return 0;                        //返回初始值
+}                                  //主函数结束
