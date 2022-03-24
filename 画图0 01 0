@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+	int i = 0;
+	int j = 0;
+	int n = 0;
+	scanf_s("%d", &n);
+	for (i = 1; i < n; i++)
+	{
+		for (j = 0; j < i; j++)
+			printf(" %d", j);
+		printf("\n");
+	}
+	for ( i = n; i > 0; i--)
+	{
+		for (j = 0; j < i; j++)
+			printf(" %d", j);
+		printf("\n");
+	}
+	return 0;
+}
+
+// 输入一个数字 使其呈现：     的效果
+//0 
+//0 1
+//0 1 2
+//0 1
+//0
+
+非常只简单，但是下半部分是fox帮忙之后才知道的，脑子不是很好使。继续努力
